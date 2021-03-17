@@ -105,8 +105,8 @@
 
     Query methods do not have return values you can see except for in pry. All methods do have return values.
 
-    **If you are struggling a bit to answer any of these, take some time after this lesson to google or talk with a classmate. If you feel absolutely lost in these, set up a time to pair with a Mod2 student/mentor/instructor.**
+**If you are struggling a bit to answer any of these, take some time after this lesson to google or talk with a classmate. If you feel absolutely lost in these, set up a time to pair with a Mod2 student/mentor/instructor.**
 
-    **I am stuggling specifically with table_print gem trying to print out the tables in the solo practice**
+**I am stuggling specifically with table_print gem trying to print out the tables in the solo practice**
 
-    **?? Attr_readers: how do they turn to methods? What are they taking from??**
+**?? Attr_readers: how do they turn to methods? What are they taking from??**
