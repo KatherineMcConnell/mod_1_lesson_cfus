@@ -8,14 +8,17 @@
   Query fetches information and command changes or gives
   a behavior to the class.
 
-  * Arguments - are the input to a method. When you
-  define a method, they are known as Parameters. (In other
-  words, a parameter is a generic placeholder for a specific
-  argument).An arguement "passes" specific data in placeholder parameters () to use or manipulate it.
+  * Arguments - are the specific input to a method or instance inside parenthesis () to use or manipulate it.
+    An argument "passes" specific data
+
+  * Parameters - are generic placeholders input to a method or instance inside parenthesis () to use or manipulate it.
+
+  * Default Arguments??
 
   * Return Value - is the output of a method. Every method has exactly one return value.
-  A return value is not the same
-  as printing.
+  A return value is not the same as printing. They are either defined explicitly using the "return" keyword or  is the last line of code run.
+
+  * Variables - Keywords which we pick and we create to hold or point to return values that we want to maintain and re-use.
 
 #### What keywords do we use to create methods?
 
@@ -26,18 +29,19 @@
 
   * The "end" keyword closes the method. At the very end of your methods you also have to close your class.
 
-  * Variable are keyword we use to hold onto return value that we want to perhaps reuse.
+  * Variable are keyword we use to hold onto return value that we want to perhaps reuse. Variables are also assigned to objects.
 
 #### How does Ruby know what to return from a method?
 
-  * Ruby reads top to bottom. The last line of a method,    before the closing "end" unless it is specifically told to "return" at a specific line. Then it stops reading at that line and returns the result of that line.
+  * Ruby reads top to bottom. The last line of a method, before the closing "end" unless it is specifically told to "return" at a specific line. Then it stops reading at that line and returns the result of that line.
 
 #### How do you call one method from within another method?
 
   * You can call one method within another as long as they
     are in the same class. You can call any method in the
     class above or below and ruby will find it.
-    ie: "Hello".size. Size is a method that can be used inside a method because it is a built-in method in 
+    ie: "Hello".size. Size is a method that can be used inside a method because it is a built-in method in
+
   * You can also
     call methods from the attr_reader & accessor initialized
     attribute methods.
@@ -49,7 +53,7 @@
 
 #### Why do we use methods?
 
-  * We use methods to reuse code. Methods are called on     objects aka instances of classes.
+  * We use methods to reuse code. Methods are called on objects aka instances of classes.
 
   * Methods can be passed arguments to manipulate instantiated attributes of a class.
 
