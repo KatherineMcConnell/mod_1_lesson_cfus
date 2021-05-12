@@ -22,7 +22,14 @@
 
   * The initial describe block has the class name. ie:
   describe Student do.
+  
   * The tests inside this first block can test the instance of is initialized and attributes of the class.
+
+  * describe blocks are describe the functionality of a group of tests ie 'describe instance methods' with a bunch of method tests under it.
+
+  * typically you'll only see 2-3 describe blocks in a spec file
+
+  * rspec -f d command will show all of the describe & it block text created.
 
 #### What is the syntax for a rspec spec?
 
@@ -46,3 +53,11 @@
  * See this documentation which will help in the future.
 
  https://rubydoc.info/gems/rspec-expectations
+
+#### Other:
+
+  * files should be run from the project root directory. To see only a specific spec file use the file path.
+
+  * if a repo created by someone else running a different version a ruby may need to be run using bundle exec rspec
+
+  * Spiking is used when you don't understanding how to figure out how to write a test, logic of it, where to even start. You can play with code until you better understand. Then delete the Spike code. Write your test. Pass your test.

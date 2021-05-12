@@ -11,11 +11,11 @@
 
   * What is an Instance?
 
-      An instance aka object is a concrete representation of a class. Aka one specific example of in a specific class. A class is like a blueprint for a house.
+      An instance aka object is a concrete representation of a class. Aka one specific example of in a specific class. A class is like a blueprint for a house. Objects are created with .new which is actually calling the initialize method.
 
   * What is an Object?
 
-      An object is an instance. Each instance has its own object id which is created in as a memory location in a local system. However, each time a new variable is set or changed/replaced, a new object id is set. So the instance is an object of the class. The actual house is an object or instance.
+      An object is an instance. Each instance has its own object id which is created in as a memory location in a local system. However, each time a new variable is set or changed/replaced, a new object id is set.(See interaction pattern in ICs) So the instance is an object of the class. The actual house is an object or instance.
 
   * How are these three things alike/different?
 
@@ -41,7 +41,7 @@
 
   * What happens when a new instance is created?
 
-    When a new instance is created it is "instantiated". It runs through the initialize method in the class file to be created with persisting attributes that the class has/is. ie the states. Initialize is only run once in an objects lifetime.
+    When a new instance is created it is "instantiated". It runs through the initialize method in the class file to be created with persisting attributes that the class has/is. ie the states. Initialize is only run once in an objects lifetime. Def initialize is also referred to as the constructor method. In other languages initialize though is a different keyword ex: init.
 
 
 #### Attributes & Methods
@@ -73,11 +73,11 @@
 
   * What is a method? How do we write methods?
 
-    A method is a behavior of a class. Methods can be attr_reader automatic methods of attributes or custom methods.
+    A method is a behavior of a class. Methods can be attr_reader automatic methods of attributes or instance (custom) methods.
 
-    Custom methods be command or query methods while attr_readers are **generally** query methods.
+    INSTANCE(custom) methods be command or query methods while attr_readers are **generally** query methods.
 
-    Custom Method written:
+    INSTANCE (custom) Method written:
     ```
     class Dog
       attr_reader :type,
@@ -92,11 +92,16 @@
       bark
     end
       ```
-    The attr_readers are query methods. And the custom behavior methods are below the initialize method. The initialize method is run only once in an objects lifetime.
+    The attr_readers are query methods. Attr_readers should only be used for things you MUST expose ie don't use an attr_reader on an SSN attribute. And the instance (custom) behavior methods are below the initialize method. The initialize method is run only once in an objects lifetime.
+
+    attr_writer write-only access (something outside of that object is going to change or manipulate that object??)
+    attr_accessor read and write access
+    attr_reader reader access
+    (how can I highlight selected in ATOM??)
 
   * What are parameters? How do we add parameters to methods?
 
-    Parameters are placeholder name that represent arguments given in the instantiation of a new object. A add parameters to methods by putting them directly after on the same line where we define the method
+    Parameters are placeholder name that represent arguments given in the instantiation of a new object. Add parameters to methods by putting them directly after on the same line where we define the method
 
 
   * What is a return value? How do you know what the return value of a method is? Do all methods have return values?
@@ -107,6 +112,6 @@
 
 **If you are struggling a bit to answer any of these, take some time after this lesson to google or talk with a classmate. If you feel absolutely lost in these, set up a time to pair with a Mod2 student/mentor/instructor.**
 
-**I am stuggling specifically with table_print gem trying to print out the tables in the solo practice**
+** I am stuggling specifically with table_print gem trying to print out the tables in the solo practice**
 
-**?? Attr_readers: how do they turn to methods? What are they taking from??**
+** ?? Attr_readers: how do they turn to methods? What are they taking from??**
