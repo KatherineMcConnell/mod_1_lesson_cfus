@@ -29,6 +29,8 @@
     * either learning code or executing code
 
 
+#### CFU
+
 #### What is scope?
 
  * Scope is what you have access to and where you have access to it.
